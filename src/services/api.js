@@ -2,7 +2,7 @@ import axios from 'axios';
 import * as SecureStore from 'expo-secure-store';
 
 // 🔥 YOUR BACKEND URL (LOCAL NETWORK)
-export const API_URL = 'https://educonnect-api-v3.onrender.com';
+export const API_URL = 'https://educonnect-backend-26.onrender.com';
 
 const api = axios.create({
   baseURL: API_URL,
