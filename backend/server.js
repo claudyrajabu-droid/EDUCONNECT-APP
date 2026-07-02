@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 // TEST DB
 app.get('/db-test', async (req, res) => {
   try {
-    const [rows] = await pool.query('SELECT 1 + 1 AS result');
+    const result = await pool.query('SELECT 1 + 1 AS result'); const rows = result.rows;
     res.json(rows[0]);
   } catch (err) {
     res.status(500).json({ error: err.message });
