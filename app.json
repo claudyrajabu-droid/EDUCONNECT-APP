@@ -4,25 +4,21 @@
     "slug": "educonnect-tanzania",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#667eea"
-    },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#667eea"
-      },
       "package": "tz.educonnect.app",
       "versionCode": 1,
-      "permissions": ["INTERNET", "ACCESS_NETWORK_STATE"]
+      "permissions": [
+        "INTERNET"
+      ]
     },
-    "plugins": ["expo-secure-store"],
+    "ios": {
+      "bundleIdentifier": "tz.educonnect.app"
+    },
     "extra": {
-      "eas": { "projectId": "your-eas-project-id" }
+      "eas": {
+        "projectId": "182ac4ab-397c-4c59-b616-c60f3eecf83c"
+      }
     }
   }
 }
